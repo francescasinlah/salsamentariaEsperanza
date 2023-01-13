@@ -1,0 +1,19 @@
+<!---------- Our Products ---------->
+
+<section class="newProduct section">
+    <div class="center-text">
+      <h2>Nuestros Productos</h2>
+    </div>
+  
+    <div class="new-content">
+
+      <div class="row" *ngFor="let product of products">
+        <img src="{{ product.img }}">
+        <h4>{{ product.title }}</h4>
+        <h5>{{ product.caption }}</h5>
+        <h3 class="price">{{ product.price | currency }}</h3>
+        <button (click)="addToCart(product)" class="btn-add-cart">Agregar</button>
+      </div>
+  
+      </div>
+   </section>

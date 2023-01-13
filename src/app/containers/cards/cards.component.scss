@@ -1,0 +1,76 @@
+    $--second-color: #74AB2C;
+    $--h2-font: 3.5rem;
+    $--h3-font: 2.625rem;
+    $--p-font: 1rem;
+    $--text-color: #000000;
+    $--bg-color: #FFFFFF;
+
+.newProduct {
+    margin-top: 2.5rem;
+}
+
+.center-text h2{
+    text-align: center;
+    font-size:  $--h3-font;
+    font-weight: 500;
+    color: $--second-color;
+}
+
+.new-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    align-items: center;
+    gap: 4.5rem;
+    margin-top: 4.5rem;
+    text-align: center;
+}
+
+.row{
+    position: relative;
+    cursor: pointer;
+}
+
+.row img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.row h4{
+    font-size: 16px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all .50s ease;
+}
+
+.row h4:hover{
+    color: $--second-color;
+    cursor: pointer;
+}
+
+.row h5{
+    color: $--text-color;
+    font-size: $--p-font;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.row h3{
+    color: $--second-color;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.row .btn-add-cart{
+    font-size: 16px;
+    color: $--bg-color;
+    bottom: 145px;
+    left: 0;
+    right: 0;
+    padding: 10px 40px;
+    background: #74AB2C;
+    border-radius: 45px;
+    border: none;
+    cursor: pointer;
+}

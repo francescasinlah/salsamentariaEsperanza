@@ -1,0 +1,109 @@
+/* CONTACT */
+@import "../../scss/variables";
+$--text-color: #000000;
+
+
+.general-contact{
+    padding-bottom: 200px;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    background: $--bg-color;
+}
+
+.center-text h2{
+    text-align: center;
+    font-size: $--h3-font;
+    font-weight: 500;
+    color: $--second-color;
+}
+
+.contact-in{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 12px;
+    background: $--bg-color;
+    box-shadow: 0px 0px 10px 0px $--text-grey;
+}
+
+.contact-map{
+    width: 100%;
+    height: auto;
+    flex: 50%;
+}
+
+.contact-map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.contact-form{
+    width: 100%;
+    height: auto;
+    flex: 50%;
+    padding: 30px;
+    text-align: center;
+}
+
+.contact-form h1{
+    margin-bottom: 30px;
+    color: $--main-color;
+    font-weight: 600;
+}
+
+.contact-form-txt{
+    width: 100%;
+    height: 40px;
+    color: $--text-color;
+    border: 1px solid $--main-color;
+    border-radius: 50px;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.contact-form-txt::placeholder{
+    color:$--text-color;
+}
+
+.contact-form-textarea{
+    width: 100%;
+    height: 130px;
+    color: $--text-color;
+    border: 1px solid $--main-color;
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 15px;
+    resize: none;
+}
+
+.contact-form-textarea::placeholder{
+    color: $--text-color;
+}
+
+.contact-form-btn{
+    // @media screen and width(min-width: 768px) {
+
+    // }
+    width: 20%;
+    border: none;
+    border-radius: 45px;
+    background: $--main-color;
+    color: $--bg-color;
+    padding: 10px 0px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: ease .40s;
+}
+
+
+.contact-form-btn:hover{
+    transform: scale(1.1);
+    transition: .5s;
+}

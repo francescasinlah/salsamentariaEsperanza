@@ -1,0 +1,92 @@
+/* RECIPES */
+@import "../../scss/variables";
+$--text-color: #000000;
+
+.recipe{
+    background: #ffffff;
+}
+
+.center-text h2{
+    text-align: center;
+    font-size: $--h3-font;
+    font-weight: 500;
+    color: $--second-color;
+}
+
+.recipe-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, auto));
+    grid-gap: 2rem;
+    align-items: 2rem;
+    margin-top: 6rem;
+    cursor: pointer;
+    border-radius: 20px;
+
+}
+
+.first{
+    padding: 0px 0px 0px 0px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 40px rgba(184, 146, 255, 13%);
+    transition: all .40s ease;
+}
+
+.recipe-content img{
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+ .recipe-text{
+    padding: 50px 45px;
+ }
+
+ .recipe-text h6{
+    font-size: 13px;
+    font-weight: 400;
+    color: #72777C;
+    margin-bottom: 15px;
+ }
+
+ .recipe-text h4{
+    font-size: 19px;
+    line-height: 1.2;
+    font-weight: 700;
+    color:  $--text-color;
+    margin-bottom: 10px;
+    transition: all .30s ease;
+ }
+
+ .recipe-text p{
+    font-size: $--p-font;
+    color: #72777C;
+    font-weight: 400;
+    line-height: 30px;
+    font-family: 'Jost', sans-serif;
+    margin-bottom: 20px;
+ }
+
+.recipe-btn{
+    display: flex;
+    align-items: center;
+}
+
+.recipe-btn a{
+    font-size: $--p-font;
+    color: $--main-color;
+    margin-right: 10px;
+}
+
+.recipe-btn i{
+    font-size: 19px;
+    color: $--main-color;
+}
+
+.recipe-text h4:hover{
+    color: $--main-color;
+}
+
+.first:hover{
+    transform: scale(1.04) translateY(-5px);
+}

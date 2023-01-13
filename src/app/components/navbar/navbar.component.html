@@ -1,0 +1,43 @@
+<header [ngClass]="{sticky: isSticky}">
+      <a href="#Inicio" class="logo"><img src="../../../assets/img/logo-esperanza.svg"></a>
+    <div class="bx bx-menu" id="menu-icon"></div>
+      <ul class="navbar">
+        <li routerLink="/"><a class="active">Inicio</a></li>
+        <li><a href="#Nosotros">Nosotros</a></li>
+        <li routerLink="/products"><a>Nuestros&nbsp;&nbsp;Productos</a></li>
+        <li routerLink="/recipes"><a>Recetas</a></li>
+        <li><a href="#Contacto">Contacto</a></li>
+      </ul>
+    
+      <div class="shopping" (click)="toggleShoppingCart()">
+        <a class="cart"><i class='bx bxs-cart-download'></i></a>
+          <div class="count-products">
+            <span id="contador-productos">{{ totalCart }}</span>
+          </div>
+        </div>
+      
+    
+      <div class="container-cart-products" [ngClass]="shoppingCartFlat ? 'hidden-cart' : ''">
+        <div class="row-product">
+            <div class="cart-product" *ngFor="let product of cart;">
+              <div class="info-cart-product">
+                <span class="cantidad-producto-carrito">{{ product.quantity }}</span>
+                <p class="titulo-producto-carrito">{{ product.title }}</p>
+                <span class="precio-producto-carrito">{{ product.price | currency }}</span>
+              </div>
+              <div class="icon-close" (click)="removeFromCart(product)">
+                <i class='bx bx-x-circle'></i>
+              </div>
+            </div>
+          </div>
+          
+        <div class="cart-total">
+          <h3 class="price">Total:&nbsp;</h3>
+          <span class="total-pagar">{{ total() | currency }}</span>
+        </div>
+      </div>
+    
+      <div class="top-btn">
+        <a href="https://web.whatsapp.com/send?phone=573185702999&text=¡Hola! Quisiera más información de sus productos" target="_blank">Comprar Ahora</a>
+      </div>
+  </header>
