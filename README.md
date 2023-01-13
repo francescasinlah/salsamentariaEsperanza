@@ -31,4 +31,4 @@ The purpose of this project was to create a website for a real client, in this c
 The project is not yet fully completed, as the project progresses I will update the improvements. ⛏
 
 
-# Authors: Francesca Gomez. 💗
+# Author: Francesca Gomez. 💗
