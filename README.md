@@ -21,7 +21,7 @@ The purpose of this project was to create a website for a real client, in this c
 
 ## The project has been built with:
 
-* [Angular] (https://angular.io/) : ^14.0.4
+* [Angular](https://angular.io/) : ^14.0.4
 
 
 # Project Status:
